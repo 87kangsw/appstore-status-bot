@@ -59,7 +59,6 @@ const checkVersion = async (app) => {
 };
 
 const getGist = async () => {
-  console.log(process.env.BUNDLE_ID);
   const gist = await octokit.rest.gists
     .get({
       gist_id: process.env.GIST_ID,
